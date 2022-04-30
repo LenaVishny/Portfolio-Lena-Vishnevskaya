@@ -2,10 +2,24 @@ html, body {
     padding:0; 
     margin:0;
 }
-body{
-    background-color: #4E7470;
-    font-family: 'Raleway', sans-serif;
+body {
+  background: linear-gradient(-45deg, #4E7470, #98C5C1, #144640, #98C5C1, #083E38);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  font-family: 'Raleway', sans-serif;
 }
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
 #preloader {
   position: fixed;
   top: 0;
@@ -32,6 +46,7 @@ body{
   }
 }
 
+
 .nav{
   display: flex;
   justify-content: flex-end;
@@ -39,20 +54,6 @@ body{
   padding: 10px;
 }
 
-#bubbles { 
-  background:#4E7470;
-  width:100%;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  position:absolute;
-  z-index:-1; 
-  }
-#bubbles:hover { 
-  background:#2B5B55;
-  }
 .menu{
   color: #98C5C1;
   text-decoration: none;
